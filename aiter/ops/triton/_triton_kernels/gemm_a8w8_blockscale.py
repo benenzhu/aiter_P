@@ -10,6 +10,17 @@ from aiter.ops.triton.utils.gemm_config_utils import get_gemm_config
 _gemm_a8w8_blockscale_repr = make_kernel_repr(
     "_gemm_a8w8_blockscale_kernel",
     [
+        "M",
+        "N",
+        "K",
+        "stride_am",
+        "stride_ak",
+        "stride_bk",
+        "stride_bn",
+        "stride_ck",
+        "stride_cm",
+        "stride_cn",
+        "stride_ascale_m",
         "GROUP_K",
         "GROUP_N",
         "BLOCK_SIZE_M",
@@ -52,9 +63,9 @@ def _gemm_a8w8_blockscale_kernel(
     a_scale_ptr,
     b_scale_ptr,
     # Matrix dimensions
-    M,
-    N,
-    K,
+    M:tl.constexpr,
+    N:tl.constexpr,
+    K:tl.constexpr,
     # The stride variables represent how much to increase the ptr by when
     # moving by 1 element in a particular dimension. E.g. `stride_am` is
     # how much to increase `a_ptr` by to get the element one row down
