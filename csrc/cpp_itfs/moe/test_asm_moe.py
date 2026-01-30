@@ -323,7 +323,7 @@ quant_algo = [
 #                 # test_fmoe(dtype, m, dim, hdim, 32, 5)
 #                 test_fmoe(dtype, m, dim, hdim, 32, 5, quant="No")
 
-# # print('\ng1u1 no quant')
+# # print('\ng1u1 no quant'test_moe_blockscale)
 # # for dtype in [torch.float16, torch.bfloat16]:
 # #     for m in [128, 256]:
 # #         for dim in [4096, 8192]:

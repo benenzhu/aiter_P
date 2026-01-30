@@ -38,7 +38,7 @@ def make_kernel_repr(base_name, config_keys):
         if not name_parts:
             return base_name
 
-        suffix = "___".join(name_parts)
+        suffix = "_".join(name_parts)
         return f"{base_name}_{suffix}"
 
     return _repr
