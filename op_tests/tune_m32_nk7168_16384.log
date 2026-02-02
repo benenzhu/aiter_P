@@ -1,0 +1,98 @@
+[aiter] WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" for more details: https://rocm.docs.amd.com/en/latest/how-to/system-optimization/mi300x.html#disable-numa-auto-balancing
+[aiter] import [module_aiter_enum] under /sgl-workspace/aiter/aiter/jit/module_aiter_enum.so
+Device: 
+Architecture: gfx942
+Tuning M=32, N=7168, K=16384 with 3841 configs...
+  Config 0: 299.56 us, 25.53 TFLOPS (NEW BEST) 294.43 us None
+  Config 1: 132.50 us, 61.13 TFLOPS (NEW BEST) 122.96 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 2: 118.75 us, 61.41 TFLOPS (NEW BEST) 122.40 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 2, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 8192, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 3: 115.98 us, 63.83 TFLOPS (NEW BEST) 117.75 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 6: 100.31 us, 82.26 TFLOPS (NEW BEST) 91.37 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 16: 98.66 us, 83.14 TFLOPS (NEW BEST) 90.41 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 26: 98.34 us, 83.21 TFLOPS (NEW BEST) 90.32 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 4, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 36: 90.25 us, 88.31 TFLOPS (NEW BEST) 85.11 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 46: 89.88 us, 89.57 TFLOPS (NEW BEST) 83.91 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 56: 89.52 us, 89.66 TFLOPS (NEW BEST) 83.83 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 4, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 105.24 us is not better than 95.26 us
+ 104.12 us is not better than 94.21 us
+ 104.04 us is not better than 93.73 us
+ 99.83 us is not better than 91.29 us
+ 102.63 us is not better than 93.57 us
+ 102.57 us is not better than 93.41 us
+ 109.49 us is not better than 98.10 us
+ 106.80 us is not better than 95.10 us
+ 101.71 us is not better than 93.03 us
+ 101.91 us is not better than 93.61 us
+ 97.86 us is not better than 87.80 us
+ 96.86 us is not better than 86.92 us
+ 96.70 us is not better than 86.92 us
+  Config 996: 89.36 us, 91.63 TFLOPS (NEW BEST) 82.03 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 1006: 86.20 us, 94.73 TFLOPS (NEW BEST) 79.34 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 86.48 us is not better than 79.46 us
+ 103.07 us is not better than 93.65 us
+ 103.11 us is not better than 93.25 us
+ 100.83 us is not better than 91.93 us
+ 100.55 us is not better than 91.53 us
+ 100.11 us is not better than 91.57 us
+ 98.46 us is not better than 88.04 us
+ 97.54 us is not better than 87.28 us
+ 97.62 us is not better than 87.40 us
+ 89.64 us is not better than 82.07 us
+ 86.32 us is not better than 79.22 us
+ 86.56 us is not better than 79.46 us
+ 103.47 us is not better than 93.49 us
+ 103.40 us is not better than 93.29 us
+ 101.15 us is not better than 92.01 us
+ 101.07 us is not better than 92.17 us
+ 100.51 us is not better than 91.69 us
+ 108.85 us is not better than 92.93 us
+ 105.72 us is not better than 90.32 us
+ 105.64 us is not better than 90.20 us
+ 91.37 us is not better than 82.43 us
+ 90.41 us is not better than 81.51 us
+ 90.16 us is not better than 81.43 us
+ 98.02 us is not better than 87.20 us
+ 98.10 us is not better than 87.28 us
+ 97.54 us is not better than 87.16 us
+ 98.30 us is not better than 87.88 us
+ 97.54 us is not better than 88.08 us
+ 108.77 us is not better than 93.09 us
+ 106.16 us is not better than 90.53 us
+ 106.04 us is not better than 90.25 us
+ 90.16 us is not better than 80.62 us
+ 90.55 us is not better than 81.46 us
+ 90.57 us is not better than 81.55 us
+ 98.38 us is not better than 87.52 us
+ 98.58 us is not better than 87.48 us
+ 97.70 us is not better than 87.28 us
+ 98.54 us is not better than 88.00 us
+ 98.26 us is not better than 88.48 us
+ 101.51 us is not better than 93.17 us
+ 99.43 us is not better than 91.25 us
+ 103.63 us is not better than 93.85 us
+ 103.56 us is not better than 94.42 us
+ 99.59 us is not better than 91.73 us
+ 103.72 us is not better than 93.77 us
+ 103.96 us is not better than 92.65 us
+ 106.60 us is not better than 94.77 us
+ 104.40 us is not better than 92.33 us
+  Best: 86.20 us, 94.73 TFLOPS
+  Config: {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+
+Best config for M=32, N=7168, K=16384:
+{
+  "BLOCK_SIZE_M": 32,
+  "BLOCK_SIZE_N": 16,
+  "BLOCK_SIZE_K": 128,
+  "GROUP_SIZE_M": 1,
+  "num_warps": 2,
+  "num_stages": 2,
+  "waves_per_eu": 2,
+  "matrix_instr_nonkdim": 16,
+  "cache_modifier": ".cg",
+  "NUM_KSPLIT": 1,
+  "kpack": 2,
+  "SPLITK_BLOCK_SIZE": 16384,
+  "GROUP_K": 128,
+  "GROUP_N": 128
+}

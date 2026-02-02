@@ -1,0 +1,534 @@
+[aiter] WARNING: NUMA balancing is enabled, which may cause errors. It is recommended to disable NUMA balancing by running "sudo sh -c 'echo 0 > /proc/sys/kernel/numa_balancing'" for more details: https://rocm.docs.amd.com/en/latest/how-to/system-optimization/mi300x.html#disable-numa-auto-balancing
+[aiter] import [module_aiter_enum] under /sgl-workspace/aiter/aiter/jit/module_aiter_enum.so
+Device: 
+Architecture: gfx942
+Tuning M=64, N=7168, K=16384 with 3841 configs...
+  Config 0: 309.30 us, 50.90 TFLOPS (NEW BEST) 295.31 us None
+  Config 1: 184.18 us, 93.51 TFLOPS (NEW BEST) 160.77 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 188.91 us is not better than 148.30 us
+ 184.62 us is not better than 146.63 us
+ 184.86 us is not better than 174.03 us
+ 189.79 us is not better than 181.01 us
+ 189.91 us is not better than 181.05 us
+ 187.21 us is not better than 156.80 us
+ 188.11 us is not better than 146.69 us
+ 186.72 us is not better than 147.13 us
+ 186.44 us is not better than 174.20 us
+ 189.35 us is not better than 179.89 us
+ 191.70 us is not better than 182.82 us
+ 187.43 us is not better than 156.40 us
+ 188.99 us is not better than 146.47 us
+ 186.90 us is not better than 147.33 us
+ 186.62 us is not better than 174.08 us
+ 189.47 us is not better than 179.29 us
+ 192.16 us is not better than 183.26 us
+  Config 31: 183.86 us, 99.84 TFLOPS (NEW BEST) 150.56 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 32: 182.45 us, 105.27 TFLOPS (NEW BEST) 142.80 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 2, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 8192, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 33: 181.65 us, 105.71 TFLOPS (NEW BEST) 142.20 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 182.37 us is not better than 169.95 us
+ 182.33 us is not better than 172.71 us
+ 186.38 us is not better than 177.08 us
+ 183.98 us is not better than 149.50 us
+ 182.05 us is not better than 141.48 us
+ 182.05 us is not better than 142.16 us
+ 182.13 us is not better than 167.26 us
+ 182.33 us is not better than 172.67 us
+ 186.80 us is not better than 176.66 us
+ 184.22 us is not better than 149.04 us
+ 182.41 us is not better than 142.08 us
+ 182.85 us is not better than 142.36 us
+ 182.45 us is not better than 167.30 us
+ 182.90 us is not better than 172.19 us
+ 187.37 us is not better than 176.48 us
+  Config 121: 163.73 us, 103.46 TFLOPS (NEW BEST) 145.29 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 191.51 us is not better than 148.62 us
+ 187.71 us is not better than 147.41 us
+ 184.02 us is not better than 173.31 us
+  Config 131: 163.21 us, 104.52 TFLOPS (NEW BEST) 143.83 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 190.07 us is not better than 146.73 us
+ 187.85 us is not better than 147.65 us
+ 186.42 us is not better than 173.79 us
+ 190.63 us is not better than 178.73 us
+  Config 141: 162.25 us, 104.91 TFLOPS (NEW BEST) 143.29 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 4, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 189.83 us is not better than 146.61 us
+ 187.79 us is not better than 148.14 us
+ 185.98 us is not better than 172.93 us
+ 190.23 us is not better than 178.29 us
+  Config 151: 161.29 us, 104.71 TFLOPS (NEW BEST) 143.57 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 183.10 us is not better than 141.40 us
+ 182.78 us is not better than 143.33 us
+ 182.61 us is not better than 170.99 us
+ 183.34 us is not better than 170.67 us
+  Config 161: 160.97 us, 105.44 TFLOPS (NEW BEST) 142.56 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 182.53 us is not better than 142.32 us
+ 182.39 us is not better than 142.08 us
+ 182.53 us is not better than 171.15 us
+ 182.49 us is not better than 171.01 us
+ 161.45 us is not better than 142.84 us
+ 183.30 us is not better than 142.40 us
+ 182.37 us is not better than 142.28 us
+ 182.90 us is not better than 172.13 us
+ 183.38 us is not better than 170.69 us
+ 186.62 us is not better than 176.56 us
+  Config 241: 146.81 us, 119.45 TFLOPS (NEW BEST) 125.85 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 32, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 153.51 us is not better than 119.59 us
+ 154.35 us is not better than 119.23 us
+  Config 246: 141.04 us, 115.83 TFLOPS (NEW BEST) 129.78 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 32, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 160.69 us is not better than 147.78 us
+ 162.21 us is not better than 150.46 us
+ 147.05 us is not better than 125.65 us
+ 155.15 us is not better than 120.27 us
+ 156.03 us is not better than 119.47 us
+ 141.28 us is not better than 130.40 us
+ 161.61 us is not better than 148.82 us
+ 162.85 us is not better than 150.34 us
+ 146.77 us is not better than 125.49 us
+ 154.83 us is not better than 119.25 us
+ 155.55 us is not better than 118.91 us
+ 141.36 us is not better than 130.38 us
+ 161.77 us is not better than 148.66 us
+ 162.69 us is not better than 150.62 us
+ 144.61 us is not better than 124.00 us
+ 148.86 us is not better than 118.71 us
+ 155.63 us is not better than 118.71 us
+ 143.21 us is not better than 134.31 us
+ 157.36 us is not better than 144.01 us
+ 163.43 us is not better than 150.98 us
+ 144.85 us is not better than 124.04 us
+ 148.02 us is not better than 120.27 us
+ 155.59 us is not better than 118.31 us
+  Config 286: 138.36 us, 118.02 TFLOPS (NEW BEST) 127.37 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 32, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 156.19 us is not better than 143.89 us
+ 162.41 us is not better than 150.40 us
+ 145.09 us is not better than 124.08 us
+ 147.33 us is not better than 115.58 us
+ 155.63 us is not better than 117.87 us
+  Config 296: 138.19 us, 118.58 TFLOPS (NEW BEST) 126.77 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 32, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 4, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 155.87 us is not better than 143.22 us
+ 162.61 us is not better than 150.80 us
+ 167.26 us is not better than 143.19 us
+ 153.03 us is not better than 119.23 us
+ 153.99 us is not better than 118.71 us
+ 161.01 us is not better than 147.90 us
+ 162.17 us is not better than 150.20 us
+ 167.94 us is not better than 143.95 us
+ 154.79 us is not better than 119.39 us
+ 155.71 us is not better than 119.17 us
+ 162.69 us is not better than 149.08 us
+ 162.89 us is not better than 150.62 us
+ 166.30 us is not better than 142.68 us
+ 154.71 us is not better than 119.83 us
+ 155.47 us is not better than 120.29 us
+ 162.75 us is not better than 149.42 us
+ 162.53 us is not better than 151.42 us
+ 154.03 us is not better than 132.10 us
+ 148.98 us is not better than 117.39 us
+ 155.41 us is not better than 119.07 us
+ 157.60 us is not better than 144.41 us
+ 163.57 us is not better than 151.30 us
+ 152.95 us is not better than 131.10 us
+ 147.46 us is not better than 120.59 us
+ 155.51 us is not better than 120.27 us
+ 156.44 us is not better than 144.25 us
+ 162.69 us is not better than 150.32 us
+ 153.35 us is not better than 131.34 us
+ 147.41 us is not better than 118.79 us
+ 155.71 us is not better than 116.63 us
+ 155.99 us is not better than 143.35 us
+ 162.57 us is not better than 150.18 us
+ 157.56 us is not better than 130.29 us
+ 142.24 us is not better than 121.07 us
+ 139.92 us is not better than 120.83 us
+ 155.59 us is not better than 141.80 us
+ 164.09 us is not better than 151.46 us
+ 156.88 us is not better than 130.98 us
+ 142.28 us is not better than 120.31 us
+ 140.20 us is not better than 121.04 us
+ 153.99 us is not better than 138.61 us
+ 154.31 us is not better than 127.73 us
+ 142.77 us is not better than 120.83 us
+ 140.60 us is not better than 121.36 us
+ 153.51 us is not better than 139.88 us
+ 143.97 us is not better than 120.13 us
+ 139.12 us is not better than 120.59 us
+ 141.12 us is not better than 118.53 us
+ 150.46 us is not better than 137.51 us
+ 158.24 us is not better than 146.65 us
+ 166.14 us is not better than 137.19 us
+  Config 522: 135.19 us, 125.15 TFLOPS (NEW BEST) 120.11 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 64, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 2, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 8192, 'GROUP_K': 128, 'GROUP_N': 128}
+ 135.19 us is not better than 120.21 us
+ 161.57 us is not better than 134.34 us
+ 135.43 us is not better than 121.62 us
+ 135.31 us is not better than 122.38 us
+ 155.11 us is not better than 137.51 us
+ 158.80 us is not better than 130.78 us
+ 157.56 us is not better than 124.28 us
+ 157.16 us is not better than 121.48 us
+ 170.15 us is not better than 136.79 us
+ 162.29 us is not better than 127.41 us
+ 161.89 us is not better than 126.89 us
+ 170.03 us is not better than 136.63 us
+ 162.13 us is not better than 127.33 us
+ 161.43 us is not better than 127.01 us
+ 168.38 us is not better than 129.53 us
+ 154.19 us is not better than 121.88 us
+ 153.91 us is not better than 122.28 us
+ 162.25 us is not better than 124.64 us
+ 152.51 us is not better than 120.03 us
+ 154.07 us is not better than 119.71 us
+ 163.45 us is not better than 125.12 us
+ 152.87 us is not better than 119.01 us
+ 153.67 us is not better than 120.03 us
+ 173.83 us is not better than 147.26 us
+ 142.36 us is not better than 122.04 us
+ 139.96 us is not better than 117.35 us
+ 175.04 us is not better than 148.02 us
+ 142.60 us is not better than 118.79 us
+ 140.36 us is not better than 120.85 us
+ 172.27 us is not better than 146.77 us
+ 142.24 us is not better than 120.75 us
+ 139.44 us is not better than 121.78 us
+ 168.00 us is not better than 143.57 us
+ 139.12 us is not better than 119.01 us
+ 139.68 us is not better than 119.43 us
+ 158.12 us is not better than 146.67 us
+  Config 642: 134.89 us, 129.05 TFLOPS (NEW BEST) 116.48 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 64, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 2, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 8192, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 643: 133.94 us, 124.32 TFLOPS (NEW BEST) 120.92 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 64, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 171.75 us is not better than 145.57 us
+ 135.23 us is not better than 119.29 us
+ 134.83 us is not better than 122.00 us
+ 156.84 us is not better than 123.76 us
+ 156.60 us is not better than 121.48 us
+ 161.65 us is not better than 127.01 us
+ 161.21 us is not better than 126.73 us
+ 161.65 us is not better than 126.65 us
+ 161.13 us is not better than 126.77 us
+ 153.47 us is not better than 122.32 us
+ 153.75 us is not better than 121.56 us
+ 151.66 us is not better than 118.99 us
+ 153.35 us is not better than 119.71 us
+ 152.11 us is not better than 119.79 us
+ 153.27 us is not better than 120.15 us
+ 150.30 us is not better than 126.57 us
+ 141.88 us is not better than 135.85 us
+ 156.92 us is not better than 138.03 us
+ 153.79 us is not better than 129.05 us
+ 138.39 us is not better than 126.87 us
+ 160.16 us is not better than 142.16 us
+ 152.31 us is not better than 127.93 us
+ 137.67 us is not better than 127.29 us
+ 158.48 us is not better than 141.20 us
+ 136.51 us is not better than 123.56 us
+ 134.19 us is not better than 123.62 us
+ 155.71 us is not better than 138.55 us
+ 150.04 us is not better than 135.19 us
+ 136.27 us is not better than 122.68 us
+  Config 763: 126.61 us, 120.68 TFLOPS (NEW BEST) 124.56 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 128, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 146.61 us is not better than 130.90 us
+ 136.39 us is not better than 122.68 us
+  Config 773: 126.17 us, 121.62 TFLOPS (NEW BEST) 123.60 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 128, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 4, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 145.85 us is not better than 130.30 us
+ 171.27 us is not better than 137.15 us
+ 172.47 us is not better than 135.59 us
+ 172.11 us is not better than 135.47 us
+ 156.52 us is not better than 125.10 us
+ 161.21 us is not better than 129.21 us
+ 153.51 us is not better than 137.95 us
+ 162.89 us is not better than 129.73 us
+ 154.27 us is not better than 138.27 us
+ 149.90 us is not better than 126.37 us
+ 141.72 us is not better than 135.87 us
+ 153.63 us is not better than 129.05 us
+ 137.99 us is not better than 129.13 us
+ 151.91 us is not better than 127.61 us
+ 138.31 us is not better than 127.09 us
+ 136.83 us is not better than 122.12 us
+ 133.90 us is not better than 124.28 us
+ 149.74 us is not better than 134.79 us
+ 136.15 us is not better than 122.28 us
+ 126.69 us is not better than 122.90 us
+ 146.17 us is not better than 130.74 us
+ 136.07 us is not better than 121.23 us
+  Config 893: 125.97 us, 122.90 TFLOPS (NEW BEST) 122.32 us {'BLOCK_SIZE_M': 16, 'BLOCK_SIZE_N': 128, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 4, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 145.65 us is not better than 129.98 us
+ 171.63 us is not better than 136.95 us
+ 172.15 us is not better than 135.57 us
+ 172.19 us is not better than 135.31 us
+ 156.76 us is not better than 124.84 us
+ 161.25 us is not better than 129.57 us
+ 163.09 us is not better than 129.29 us
+ 156.74 us is not better than 125.77 us
+ 148.58 us is not better than 121.60 us
+  Config 966: 125.32 us, 135.61 TFLOPS (NEW BEST) 110.85 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 135.69 us is not better than 125.08 us
+ 133.02 us is not better than 125.97 us
+ 155.71 us is not better than 125.00 us
+ 148.66 us is not better than 118.75 us
+ 125.57 us is not better than 110.65 us
+ 134.95 us is not better than 125.04 us
+ 132.58 us is not better than 124.00 us
+ 155.87 us is not better than 124.40 us
+ 148.82 us is not better than 122.80 us
+ 125.76 us is not better than 110.57 us
+ 134.63 us is not better than 126.39 us
+ 133.00 us is not better than 125.13 us
+ 149.06 us is not better than 119.51 us
+ 152.99 us is not better than 121.04 us
+  Config 996: 120.31 us, 139.60 TFLOPS (NEW BEST) 107.68 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 131.24 us is not better than 123.36 us
+ 140.08 us is not better than 126.69 us
+ 148.94 us is not better than 120.07 us
+ 146.61 us is not better than 119.67 us
+  Config 1006: 119.43 us, 141.01 TFLOPS (NEW BEST) 106.60 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 16, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 1, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 16384, 'GROUP_K': 128, 'GROUP_N': 128}
+ 131.58 us is not better than 124.92 us
+ 132.84 us is not better than 125.40 us
+ 148.90 us is not better than 118.61 us
+ 146.25 us is not better than 121.36 us
+ 119.79 us is not better than 106.60 us
+ 130.86 us is not better than 124.44 us
+ 133.26 us is not better than 122.16 us
+ 156.58 us is not better than 125.57 us
+ 149.02 us is not better than 123.00 us
+ 136.83 us is not better than 124.36 us
+ 135.83 us is not better than 124.68 us
+ 133.54 us is not better than 127.79 us
+ 155.67 us is not better than 124.28 us
+ 148.70 us is not better than 120.77 us
+ 136.79 us is not better than 124.08 us
+ 134.75 us is not better than 128.07 us
+ 133.14 us is not better than 124.24 us
+ 155.69 us is not better than 124.48 us
+ 149.18 us is not better than 121.96 us
+ 136.99 us is not better than 124.32 us
+ 135.03 us is not better than 123.92 us
+ 133.38 us is not better than 125.44 us
+ 149.14 us is not better than 118.59 us
+ 153.87 us is not better than 120.95 us
+ 132.70 us is not better than 120.59 us
+ 131.58 us is not better than 122.92 us
+ 140.22 us is not better than 126.31 us
+ 153.43 us is not better than 130.38 us
+ 149.22 us is not better than 121.09 us
+ 146.57 us is not better than 121.22 us
+ 130.18 us is not better than 118.51 us
+ 130.98 us is not better than 123.74 us
+ 133.46 us is not better than 124.76 us
+ 152.83 us is not better than 129.41 us
+ 149.10 us is not better than 117.59 us
+ 146.33 us is not better than 120.83 us
+ 129.93 us is not better than 118.87 us
+ 131.06 us is not better than 120.67 us
+ 133.42 us is not better than 124.46 us
+ 149.22 us is not better than 123.16 us
+ 139.56 us is not better than 123.12 us
+ 137.79 us is not better than 119.79 us
+ 131.30 us is not better than 114.06 us
+ 124.04 us is not better than 126.01 us
+ 121.04 us is not better than 123.36 us
+ 147.33 us is not better than 120.59 us
+ 140.12 us is not better than 121.28 us
+ 137.35 us is not better than 119.07 us
+ 131.58 us is not better than 114.82 us
+ 123.44 us is not better than 124.44 us
+ 120.83 us is not better than 123.84 us
+ 147.58 us is not better than 120.19 us
+ 139.28 us is not better than 121.88 us
+ 137.83 us is not better than 120.31 us
+ 132.28 us is not better than 114.66 us
+ 123.38 us is not better than 126.05 us
+ 121.22 us is not better than 124.56 us
+ 142.76 us is not better than 116.75 us
+ 132.62 us is not better than 121.18 us
+ 132.18 us is not better than 118.87 us
+ 139.40 us is not better than 121.76 us
+  Config 1237: 119.11 us, 120.12 TFLOPS (NEW BEST) 125.14 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 32, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 2, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 8192, 'GROUP_K': 128, 'GROUP_N': 128}
+  Config 1238: 117.83 us, 118.96 TFLOPS (NEW BEST) 126.37 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 32, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 141.40 us is not better than 116.14 us
+ 132.94 us is not better than 122.62 us
+ 135.35 us is not better than 120.55 us
+ 136.15 us is not better than 119.07 us
+  Config 1247: 117.59 us, 120.18 TFLOPS (NEW BEST) 125.08 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 32, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 2, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 8192, 'GROUP_K': 128, 'GROUP_N': 128}
+ 119.59 us is not better than 124.64 us
+ 141.88 us is not better than 115.82 us
+ 133.18 us is not better than 122.74 us
+ 135.07 us is not better than 119.63 us
+ 137.51 us is not better than 120.15 us
+  Config 1257: 117.55 us, 121.15 TFLOPS (NEW BEST) 124.08 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 32, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 4, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 2, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 8192, 'GROUP_K': 128, 'GROUP_N': 128}
+ 120.03 us is not better than 126.97 us
+ 154.79 us is not better than 128.13 us
+ 139.88 us is not better than 123.62 us
+ 136.03 us is not better than 122.12 us
+ 144.53 us is not better than 125.44 us
+ 127.61 us is not better than 123.08 us
+ 122.60 us is not better than 126.37 us
+ 150.14 us is not better than 122.80 us
+ 138.63 us is not better than 123.22 us
+ 136.71 us is not better than 122.32 us
+ 145.61 us is not better than 125.77 us
+ 126.77 us is not better than 125.63 us
+ 123.36 us is not better than 127.49 us
+ 150.34 us is not better than 123.04 us
+ 138.76 us is not better than 124.08 us
+ 136.79 us is not better than 123.40 us
+ 145.93 us is not better than 126.01 us
+ 127.09 us is not better than 125.67 us
+ 123.48 us is not better than 126.41 us
+ 150.98 us is not better than 125.08 us
+ 135.39 us is not better than 124.00 us
+ 131.22 us is not better than 121.32 us
+ 141.60 us is not better than 122.00 us
+ 121.88 us is not better than 124.68 us
+ 118.87 us is not better than 124.32 us
+ 148.70 us is not better than 123.68 us
+ 134.08 us is not better than 124.58 us
+ 130.29 us is not better than 121.76 us
+ 140.64 us is not better than 121.36 us
+ 121.60 us is not better than 124.32 us
+ 118.19 us is not better than 127.09 us
+ 151.34 us is not better than 124.76 us
+ 134.15 us is not better than 121.88 us
+ 129.98 us is not better than 119.91 us
+ 141.36 us is not better than 122.16 us
+ 121.56 us is not better than 125.37 us
+ 118.23 us is not better than 125.40 us
+ 138.92 us is not better than 123.28 us
+ 138.43 us is not better than 121.32 us
+ 139.68 us is not better than 120.75 us
+ 123.36 us is not better than 124.10 us
+ 121.60 us is not better than 122.20 us
+ 139.28 us is not better than 120.43 us
+ 138.15 us is not better than 121.34 us
+ 138.71 us is not better than 121.05 us
+ 123.00 us is not better than 124.52 us
+ 121.28 us is not better than 123.86 us
+ 139.32 us is not better than 120.67 us
+ 137.95 us is not better than 121.36 us
+ 139.20 us is not better than 120.83 us
+ 122.60 us is not better than 126.25 us
+ 121.20 us is not better than 125.73 us
+ 132.38 us is not better than 122.00 us
+ 131.70 us is not better than 120.92 us
+ 138.31 us is not better than 120.23 us
+ 119.43 us is not better than 124.16 us
+ 118.55 us is not better than 125.04 us
+ 132.70 us is not better than 123.96 us
+ 135.63 us is not better than 118.99 us
+ 136.79 us is not better than 120.35 us
+ 117.55 us is not better than 129.13 us
+ 119.99 us is not better than 124.44 us
+ 132.46 us is not better than 121.44 us
+ 134.95 us is not better than 122.48 us
+ 137.03 us is not better than 120.71 us
+  Config 1377: 117.51 us, 118.32 TFLOPS (NEW BEST) 127.05 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 32, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 4, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 2, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 8192, 'GROUP_K': 128, 'GROUP_N': 128}
+ 119.71 us is not better than 126.73 us
+ 139.48 us is not better than 123.08 us
+ 136.19 us is not better than 120.35 us
+ 126.97 us is not better than 126.21 us
+ 122.36 us is not better than 124.56 us
+ 138.68 us is not better than 122.24 us
+ 136.83 us is not better than 121.52 us
+ 126.57 us is not better than 126.17 us
+ 123.64 us is not better than 124.28 us
+ 138.56 us is not better than 122.78 us
+ 136.63 us is not better than 120.37 us
+ 126.29 us is not better than 124.88 us
+ 123.46 us is not better than 123.44 us
+ 135.27 us is not better than 123.28 us
+ 130.90 us is not better than 118.83 us
+ 145.61 us is not better than 126.53 us
+ 122.04 us is not better than 125.04 us
+ 119.07 us is not better than 124.08 us
+ 133.62 us is not better than 121.82 us
+ 130.14 us is not better than 122.24 us
+ 145.29 us is not better than 127.41 us
+ 121.44 us is not better than 126.97 us
+ 118.19 us is not better than 126.21 us
+ 133.78 us is not better than 122.68 us
+ 130.18 us is not better than 119.59 us
+ 144.81 us is not better than 125.44 us
+ 121.76 us is not better than 126.13 us
+ 118.47 us is not better than 124.96 us
+ 136.99 us is not better than 123.20 us
+ 119.07 us is not better than 121.84 us
+ 125.71 us is not better than 126.05 us
+ 132.26 us is not better than 124.60 us
+ 120.95 us is not better than 122.82 us
+ 123.60 us is not better than 127.25 us
+  Config 1458: 116.59 us, 119.30 TFLOPS (NEW BEST) 126.01 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 64, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 2, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 136.71 us is not better than 124.04 us
+ 120.39 us is not better than 122.48 us
+ 125.69 us is not better than 125.14 us
+  Config 1468: 116.47 us, 120.33 TFLOPS (NEW BEST) 124.92 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 64, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 1, 'waves_per_eu': 4, 'matrix_instr_nonkdim': 16, 'cache_modifier': '.cg', 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 120.95 us is not better than 123.92 us
+  Config 1473: 111.05 us, 121.98 TFLOPS (NEW BEST) 123.24 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 64, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 1, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 143.12 us is not better than 117.15 us
+ 131.10 us is not better than 121.80 us
+ 117.07 us is not better than 121.44 us
+ 142.68 us is not better than 116.50 us
+ 144.57 us is not better than 115.44 us
+ 152.67 us is not better than 120.87 us
+ 133.98 us is not better than 121.60 us
+ 153.63 us is not better than 119.57 us
+ 133.86 us is not better than 119.35 us
+ 155.43 us is not better than 120.03 us
+ 134.19 us is not better than 118.51 us
+ 144.17 us is not better than 119.67 us
+ 123.20 us is not better than 117.91 us
+ 131.04 us is not better than 109.89 us
+ 124.04 us is not better than 120.71 us
+ 136.47 us is not better than 113.10 us
+ 141.52 us is not better than 121.80 us
+ 123.48 us is not better than 120.11 us
+ 139.08 us is not better than 115.50 us
+ 119.07 us is not better than 120.75 us
+ 136.35 us is not better than 121.96 us
+ 151.82 us is not better than 121.32 us
+ 133.62 us is not better than 120.71 us
+ 152.63 us is not better than 121.54 us
+ 133.50 us is not better than 119.47 us
+ 155.19 us is not better than 119.71 us
+ 134.02 us is not better than 118.91 us
+ 143.65 us is not better than 120.47 us
+ 123.40 us is not better than 120.39 us
+ 141.88 us is not better than 120.21 us
+ 124.08 us is not better than 120.79 us
+ 141.32 us is not better than 121.42 us
+ 123.08 us is not better than 119.99 us
+ 121.60 us is not better than 122.16 us
+ 122.70 us is not better than 121.00 us
+ 133.86 us is not better than 122.00 us
+ 130.14 us is not better than 121.64 us
+ 120.47 us is not better than 122.16 us
+  Config 1833: 109.69 us, 124.67 TFLOPS (NEW BEST) 120.57 us {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 128, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+ 139.32 us is not better than 118.51 us
+ 138.51 us is not better than 118.15 us
+ 139.84 us is not better than 118.71 us
+ 139.56 us is not better than 118.35 us
+ 149.14 us is not better than 118.83 us
+ 135.07 us is not better than 112.46 us
+ 134.55 us is not better than 112.01 us
+ 134.14 us is not better than 110.09 us
+ 148.04 us is not better than 118.15 us
+ 136.67 us is not better than 113.50 us
+ 135.55 us is not better than 112.74 us
+ 133.94 us is not better than 110.57 us
+  Best: 109.69 us, 124.67 TFLOPS
+  Config: {'BLOCK_SIZE_M': 32, 'BLOCK_SIZE_N': 128, 'BLOCK_SIZE_K': 128, 'GROUP_SIZE_M': 4, 'num_warps': 2, 'num_stages': 2, 'waves_per_eu': 1, 'matrix_instr_nonkdim': 16, 'cache_modifier': None, 'NUM_KSPLIT': 4, 'kpack': 2, 'SPLITK_BLOCK_SIZE': 4096, 'GROUP_K': 128, 'GROUP_N': 128}
+
+Best config for M=64, N=7168, K=16384:
+{
+  "BLOCK_SIZE_M": 32,
+  "BLOCK_SIZE_N": 128,
+  "BLOCK_SIZE_K": 128,
+  "GROUP_SIZE_M": 4,
+  "num_warps": 2,
+  "num_stages": 2,
+  "waves_per_eu": 1,
+  "matrix_instr_nonkdim": 16,
+  "cache_modifier": null,
+  "NUM_KSPLIT": 4,
+  "kpack": 2,
+  "SPLITK_BLOCK_SIZE": 4096,
+  "GROUP_K": 128,
+  "GROUP_N": 128
+}
